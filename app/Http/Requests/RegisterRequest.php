@@ -28,15 +28,10 @@ class RegisterRequest extends FormRequest
 
         // aqui van la reglas de validacion del login
         return [
-            'name' => 'required|min:3',
             'email' => 'required|min:3',
             'username' => 'required|min:3',
             'password' => 'required|min:3',
-            'password_confirmation' => 'required|same:password'
-            // 'email' -> 'required|unique:users, email ',
-            // 'username' -> 'required|unique:users, username',
-            // 'password' -> 'required|min:8',
-            // 'password_confirmation' -> 'required|same:password'
+            'password_confirmation' => 'required|same:password',
         ];
     }
 }
