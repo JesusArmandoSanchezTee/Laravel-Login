@@ -8,5 +8,6 @@
 </head>
 <body>
     <h1>HOME</h1>
+    <p>contenido</p>
 </body>
 </html>

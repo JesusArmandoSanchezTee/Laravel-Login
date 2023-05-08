@@ -8,15 +8,44 @@
     <title>Registro</title>
 </head>
 <body>
-    <form action="/register" method="POST">
+    <form class="marg" action="/register" method="POST">
         <div class="container w-25 border p-4">
             @csrf
-            <input type="text" name="username">
-            <input type="email" name="email">
-            <input type="password" name="password">
-            <input type="password" name="password_confirmation">
-            <input type="submit" value="Registrarse">
+            <legend class="cen">Register</legend>
+            <label for="exampleInputEmail1" class="form-label">Username</label>
+            <input type="text" name="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            
+            <label for="exampleInputEmail1" class="form-label">Password</label>
+            <input type="password" name="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+            
+            <div class="mb-3">
+                
+                <label for="exampleInputEmail1" class="form-label">Password Confirmation</label>
+                <input type="password" name="password_confirmation" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+            </div>
+
+            <button type="submit" value="Registrarse" class="btn btn-success cen">submit</button>
         </div>
     </form>
+
+    <style>
+        
+        .marg{
+                margin-top: 200px;
+        }
+
+        .cen{
+            margin-left: 130px;
+        }
+
+        body{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
 </body>
 </html>

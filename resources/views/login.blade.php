@@ -19,6 +19,7 @@
         <input type="submit" value="Login">
 
     </form> --}}
+
     <form class="marg" action="/login" method="POST" >
         @csrf
         <div class="container w-25 border p-4">
